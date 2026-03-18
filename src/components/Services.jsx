@@ -1,4 +1,5 @@
 import InfoCard from './InfoCard'
+import LongInfoCard from './LongInfoCard'
 
 const CARD_1 = {
   title: 'Get Instant Access To Modern Equipment!',
@@ -16,6 +17,22 @@ const CARD_2 = {
   imageSrc: '/nutrients.png',
 }
 
+const LONG_CARD_1 = {
+  title: 'Join one of our Group Classes',
+  description:
+    'Stay motivated and push your limits with our high-energy group classes led by certified trainers. From HIIT and strength training to yoga and functional workouts, each session is designed to improve fitness while keeping it fun and engaging. Train alongside others, build consistency, and enjoy a supportive environment that helps you stay committed and reach your goals faster.',
+  imageAlt: 'Group class practicing yoga or stretching in a modern gym',
+  imageSrc: '/group_classes.jpg',
+}
+
+const LONG_CARD_2 = {
+  title: 'Hire a personal trainer',
+  description:
+    "Take your fitness to the next level with one-on-one training tailored just for you. Our certified personal trainers create custom workout plans based on your goals whether it's fat loss, muscle gain, or overall fitness. Get expert guidance, proper form correction, and continuous motivation to ensure faster, safer, and more effective results.",
+  imageAlt: 'Personal trainer assisting client with kettlebell workout',
+  imageSrc: '/Personal_training.jpg',
+}
+
 export default function Services() {
   return (
     <section id="services" className="min-h-screen bg-cream px-2 py-20 md:px-4">
@@ -23,6 +40,11 @@ export default function Services() {
         <div className="grid gap-12 md:grid-cols-2">
           <InfoCard {...CARD_1} />
           <InfoCard {...CARD_2} />
+        </div>
+
+        <div className="mt-20 flex flex-col gap-20">
+          <LongInfoCard {...LONG_CARD_1} />
+          <LongInfoCard {...LONG_CARD_2} />
         </div>
       </div>
     </section>
