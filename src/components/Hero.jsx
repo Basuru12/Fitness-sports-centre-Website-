@@ -1,3 +1,5 @@
+import ButtonLink from './ButtonLink'
+
 export default function Hero() {
   const backgroundImageUrl = '/hero.png'
 
@@ -17,18 +19,12 @@ export default function Hero() {
           Your journey to a stronger, healthier you starts here. Expert trainers, modern facilities, and a community that supports your goals.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#membership"
-            className="rounded-lg bg-cream px-6 py-3 font-medium text-ink transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
-          >
+          <ButtonLink href="#membership" variant="filled">
             Join Now
-          </a>
-          <a
-            href="#services"
-            className="rounded-lg border-2 border-cream px-6 py-3 font-medium text-cream transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
-          >
+          </ButtonLink>
+          <ButtonLink href="#services" variant="outline">
             Our Services
-          </a>
+          </ButtonLink>
         </div>
       </div>
     </section>
