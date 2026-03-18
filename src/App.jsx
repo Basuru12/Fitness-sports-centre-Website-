@@ -1,10 +1,10 @@
 import About from './components/sections/About'
 import Hero from './components/sections/Hero'
+import Membership from './components/sections/Membership'
 import Navbar from './components/sections/Navbar'
 import Services from './components/sections/Services'
 
 const sections = [
-  { id: 'membership', title: 'Membership', backgroundClass: 'bg-cream' },
   { id: 'trainers', title: 'Trainers', backgroundClass: 'bg-cream' },
   { id: 'contact', title: 'Contact us', backgroundClass: 'bg-cream' },
 ]
@@ -31,6 +31,7 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Membership />
         {sections.map((section) => (
           <ContentSection key={section.id} {...section} />
         ))}
