@@ -1,7 +1,7 @@
-import About from './components/About'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Services from './components/Services'
+import About from './components/sections/About'
+import Hero from './components/sections/Hero'
+import Navbar from './components/sections/Navbar'
+import Services from './components/sections/Services'
 
 const sections = [
   { id: 'membership', title: 'Membership', backgroundClass: 'bg-cream' },

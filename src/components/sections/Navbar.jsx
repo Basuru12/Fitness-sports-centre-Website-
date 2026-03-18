@@ -9,8 +9,12 @@ const navLinks = [
   { label: 'Contact us', href: '#contact', desktopGroup: 'right' },
 ]
 
-const desktopLeftLinks = navLinks.filter(({ desktopGroup }) => desktopGroup === 'left')
-const desktopRightLinks = navLinks.filter(({ desktopGroup }) => desktopGroup === 'right')
+const desktopLeftLinks = navLinks.filter(
+  ({ desktopGroup }) => desktopGroup === 'left',
+)
+const desktopRightLinks = navLinks.filter(
+  ({ desktopGroup }) => desktopGroup === 'right',
+)
 
 function NavLink({ href, label, className, onClick }) {
   return (
@@ -61,7 +65,10 @@ export default function Navbar() {
             ))}
 
             <div className="flex flex-col items-center justify-center">
-              <HomeLogoLink logoSizeClass="navbar-logo--desktop" onClick={scrollToTop} />
+              <HomeLogoLink
+                logoSizeClass="navbar-logo--desktop"
+                onClick={scrollToTop}
+              />
             </div>
 
             {desktopRightLinks.map(({ href, label }) => (
@@ -71,7 +78,10 @@ export default function Navbar() {
 
           {/* Mobile center: logo + Services */}
           <div className="flex flex-1 flex-col items-center justify-center pr-12 md:hidden">
-            <HomeLogoLink logoSizeClass="navbar-logo--mobile" onClick={scrollToTop} />
+            <HomeLogoLink
+              logoSizeClass="navbar-logo--mobile"
+              onClick={scrollToTop}
+            />
             <NavLink
               href="#services"
               className="navbar-services-pill-mobile"
@@ -135,3 +145,4 @@ export default function Navbar() {
     </nav>
   )
 }
+

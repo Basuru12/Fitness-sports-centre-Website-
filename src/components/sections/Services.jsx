@@ -1,5 +1,5 @@
-import InfoCard from './InfoCard'
-import LongInfoCard from './LongInfoCard'
+import InfoCard from '../ui/InfoCard'
+import LongInfoCard from '../ui/LongInfoCard'
 
 const CARD_1 = {
   title: 'Get Instant Access To Modern Equipment!',

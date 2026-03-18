@@ -6,11 +6,19 @@ const variantClasses = {
   outline: 'border-2 border-cream text-cream',
 }
 
-export default function ButtonLink({ href, variant = 'filled', children, className = '' }) {
-  const classes = [baseClasses, variantClasses[variant], className].filter(Boolean).join(' ')
+export default function ButtonLink({
+  href,
+  variant = 'filled',
+  children,
+  className = '',
+}) {
+  const classes = [baseClasses, variantClasses[variant], className]
+    .filter(Boolean)
+    .join(' ')
   return (
     <a href={href} className={classes}>
       {children}
     </a>
   )
 }
+

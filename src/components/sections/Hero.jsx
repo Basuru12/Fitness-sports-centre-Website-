@@ -1,4 +1,4 @@
-import ButtonLink from './ButtonLink'
+import ButtonLink from '../ui/ButtonLink'
 
 export default function Hero() {
   const backgroundImageUrl = '/hero.png'
@@ -30,3 +30,4 @@ export default function Hero() {
     </section>
   )
 }
+
