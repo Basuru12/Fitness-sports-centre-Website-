@@ -1,3 +1,4 @@
+import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 
 const sections = [
@@ -27,6 +28,7 @@ function App() {
     <>
       <Navbar />
       <main className="pt-20 md:pt-32">
+        <Hero />
         {sections.map((section) => (
           <ContentSection key={section.id} {...section} />
         ))}
