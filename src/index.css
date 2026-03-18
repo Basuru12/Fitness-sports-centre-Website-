@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text-theme-body {
+    @apply mx-auto max-w-prose text-center text-3xl leading-relaxed text-ink;
+  }
+}
+
 html,
 body {
   background-color: var(--color-cream);
