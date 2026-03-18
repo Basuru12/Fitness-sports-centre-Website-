@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        cream: 'var(--color-cream)',
+        ink: 'var(--color-ink)',
+      },
       fontFamily: {
         serif: ['Lora', 'Georgia', 'serif'],
       },

@@ -1,19 +1,25 @@
 /* Reusable navbar-only styles (Tailwind @apply) */
 
 .navbar-link {
-  @apply whitespace-nowrap font-serif text-2xl text-slate-900 transition-opacity hover:opacity-80;
+  @apply whitespace-nowrap font-serif text-2xl transition-opacity hover:opacity-80;
+  color: var(--color-ink);
 }
 
 .navbar-services-label {
-  @apply whitespace-nowrap font-serif text-2xl text-slate-900;
+  @apply whitespace-nowrap font-serif text-2xl;
+  color: var(--color-ink);
 }
 
 .navbar-services-pill {
-  @apply inline-flex h-20 w-40 items-center justify-center rounded-b-[5rem] bg-[#F2F2F0] font-medium leading-none text-slate-900;
+  @apply inline-flex h-20 w-40 items-center justify-center rounded-b-[5rem] font-medium leading-none;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .navbar-services-pill-mobile {
-  @apply mt-1 inline-flex h-16 w-32 items-center justify-center rounded-b-[4rem] bg-[#F2F2F0] font-medium leading-none text-slate-900;
+  @apply mt-1 inline-flex h-16 w-32 items-center justify-center rounded-b-[4rem] font-medium leading-none;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .navbar-desktop-services-wrapper {
@@ -21,7 +27,8 @@
 }
 
 .navbar-menu-btn {
-  @apply absolute right-4 top-1/2 flex -translate-y-1/2 flex-col justify-center gap-1.5 rounded p-2 text-slate-900 transition-colors hover:bg-stone-200 focus:outline-none focus:ring-2 focus:ring-slate-500 md:hidden;
+  @apply absolute right-4 top-1/2 flex -translate-y-1/2 flex-col justify-center gap-1.5 rounded p-2 transition-colors hover:bg-stone-200 focus:outline-none focus:ring-2 focus:ring-slate-500 md:hidden;
+  color: var(--color-ink);
 }
 
 .navbar-logo-link {

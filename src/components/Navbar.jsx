@@ -54,7 +54,7 @@ export default function Navbar() {
       {/* Only the inner cream bar is fixed; outer wrapper is in flow (no full-width strip) */}
       <div className="fixed left-0 right-0 top-4 z-50 overflow-visible md:top-6">
         {/* Inner nav bar: rounded cream box with labels and logo */}
-        <div className="mx-auto max-w-6xl rounded-2xl bg-[#F2F2F0] px-4 py-2 shadow-md text-slate-900 md:px-8 md:pb-4">
+        <div className="mx-auto max-w-6xl rounded-2xl bg-cream px-4 py-2 shadow-md text-slate-900 md:px-8 md:pb-4">
           <div className="hidden w-full grid-cols-5 items-center justify-items-center gap-x-12 md:grid">
             {desktopLeftLinks.map(({ href, label }) => (
               <NavLink key={href} href={href} label={label} className="navbar-link" />
@@ -116,7 +116,7 @@ export default function Navbar() {
             menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="border-t border-stone-300 bg-[#F2F2F0] px-4 py-3">
+          <div className="border-t border-stone-300 bg-cream px-4 py-3">
             <ul className="flex flex-col gap-1">
               {navLinks.map(({ label, href }) => (
                 <li key={href}>
