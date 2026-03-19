@@ -1,3 +1,4 @@
+import { HEADING_PRIMARY_CLASS } from '../../constants/headingClasses'
 import PricingCard from '../ui/PricingCard'
 
 const PLANS = [
@@ -46,7 +47,7 @@ export default function Membership() {
   return (
     <section id="membership" className="min-h-screen bg-cream px-4 py-20 md:px-8">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-lg font-semibold text-ink">Choose a package</h2>
+        <h2 className={HEADING_PRIMARY_CLASS}>Choose a package</h2>
 
         <div className="mt-14 grid grid-cols-1 items-stretch justify-items-center gap-14 md:grid-cols-3 md:gap-16">
           {PLANS.map((plan) => (

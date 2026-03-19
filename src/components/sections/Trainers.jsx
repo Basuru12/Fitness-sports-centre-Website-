@@ -1,3 +1,4 @@
+import { HEADING_PRIMARY_LEFT_CLASS } from '../../constants/headingClasses'
 import TrainerCard from '../ui/TrainerCard'
 
 const TRAINERS = [
@@ -31,7 +32,7 @@ export default function Trainers() {
       className="min-h-screen bg-cream px-4 py-20 md:px-8"
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-2xl font-bold text-ink">Meet the trainers</h2>
+        <h2 className={HEADING_PRIMARY_LEFT_CLASS}>Meet the trainers</h2>
 
         <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-16">
           {TRAINERS.map((trainer) => (

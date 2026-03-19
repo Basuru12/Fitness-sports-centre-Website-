@@ -1,17 +1,22 @@
+import { HEADING_PRIMARY_LEFT_CLASS } from '../../constants/headingClasses'
 import CardImage from './CardImage'
 
 export default function LongInfoCard({ title, description, imageAlt, imageSrc }) {
   return (
     <article className="flex flex-col">
-      <h2 className="text-left text-xl font-bold text-ink md:text-2xl">
-        {title}
-      </h2>
+      <h2 className={HEADING_PRIMARY_LEFT_CLASS}>{title}</h2>
 
       <div className="mt-6">
-        <CardImage imageSrc={imageSrc} imageAlt={imageAlt} />
+        <CardImage
+          imageSrc={imageSrc}
+          imageAlt={imageAlt}
+          className="mx-auto w-full max-w-none md:max-w-5xl"
+        />
       </div>
 
-      <p className="mt-4 text-theme-body">{description}</p>
+      <p className="mt-4 mx-auto max-w-prose text-center text-xl leading-relaxed text-ink md:text-xl">
+        {description}
+      </p>
     </article>
   )
 }

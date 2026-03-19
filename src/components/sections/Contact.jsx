@@ -1,3 +1,4 @@
+import { HEADING_PRIMARY_CLASS } from '../../constants/headingClasses'
 import ContactForm from '../ui/ContactForm'
 import { EnvelopeIcon, HomeIcon, PhoneIcon } from '../ui/Icons'
 
@@ -19,7 +20,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
           {/* Left column */}
           <div>
-            <h2 className="text-2xl font-bold text-ink">
+            <h2 className={HEADING_PRIMARY_CLASS}>
               Send us a message , we will get back to you
             </h2>
             <div className="mt-6 flex flex-col gap-4">

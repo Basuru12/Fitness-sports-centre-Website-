@@ -1,5 +1,6 @@
 import About from './components/sections/About'
 import Contact from './components/sections/Contact'
+import { HEADING_PRIMARY_CLASS } from './constants/headingClasses'
 import Hero from './components/sections/Hero'
 import Membership from './components/sections/Membership'
 import Navbar from './components/sections/Navbar'
@@ -15,7 +16,7 @@ function ContentSection({ id, title, backgroundClass }) {
       className={`min-h-screen px-4 py-20 md:px-8 ${backgroundClass}`}
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-2xl font-bold text-ink">{title}</h2>
+        <h2 className={HEADING_PRIMARY_CLASS}>{title}</h2>
         <p className="mt-4 text-slate-700">Placeholder section.</p>
       </div>
     </section>
