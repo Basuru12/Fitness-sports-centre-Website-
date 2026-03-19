@@ -11,13 +11,13 @@
 }
 
 .navbar-services-pill {
-  @apply inline-flex h-20 w-40 items-center justify-center rounded-b-[5rem] font-medium leading-none;
+  @apply inline-flex h-20 w-40 items-center justify-center rounded-b-[5rem] font-medium leading-none shadow-md;
   background-color: var(--color-cream);
   color: var(--color-ink);
 }
 
 .navbar-services-pill-mobile {
-  @apply mt-1 inline-flex h-16 w-32 items-center justify-center rounded-b-[4rem] font-medium leading-none;
+  @apply mt-1 inline-flex h-16 w-32 items-center justify-center rounded-b-[4rem] font-medium leading-none shadow-md;
   background-color: var(--color-cream);
   color: var(--color-ink);
 }
