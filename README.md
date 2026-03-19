@@ -44,5 +44,5 @@ npm run preview
 
 ## Live Link
 
-Add your deployed URL here: [Live Demo](https://69bc034f9cf7da0007c9fe13--meek-scone-8f01d7.netlify.app/)
+ [Live Demo](https://69bc034f9cf7da0007c9fe13--meek-scone-8f01d7.netlify.app/)
 
