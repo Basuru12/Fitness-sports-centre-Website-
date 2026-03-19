@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ThemeToggle from '../ui/ThemeToggle'
 import './Navbar.css'
 
 const navLinks = [
@@ -58,7 +59,8 @@ export default function Navbar() {
       {/* Only the inner cream bar is fixed; outer wrapper is in flow (no full-width strip) */}
       <div className="fixed left-0 right-0 top-4 z-50 overflow-visible md:top-6">
         {/* Inner nav bar: rounded cream box with labels and logo */}
-        <div className="relative mx-auto max-w-6xl rounded-2xl bg-cream px-4 py-2 shadow-md text-slate-900 md:px-8 md:pb-4">
+        <div className="navbar-inner-bar relative mx-auto max-w-6xl overflow-visible rounded-2xl px-4 py-2 pr-28 shadow-md text-ink md:px-8 md:pr-16 md:pb-4">
+          <ThemeToggle className="absolute right-[5.5rem] top-2 z-20 md:right-6 md:top-3" />
           <div className="hidden w-full grid-cols-5 items-center justify-items-center gap-x-12 md:grid">
             {desktopLeftLinks.map(({ href, label }) => (
               <NavLink key={href} href={href} label={label} className="navbar-link" />
@@ -77,7 +79,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile center: logo only (links live in hamburger menu) */}
-          <div className="flex flex-1 flex-col items-center justify-center pr-12 md:hidden">
+          <div className="flex flex-1 flex-col items-center justify-center pr-28 md:hidden">
             <HomeLogoLink
               logoSizeClass="navbar-logo--mobile"
               onClick={scrollToTop}
@@ -107,12 +109,14 @@ export default function Navbar() {
         </div>
 
         {/* Desktop: Services semicircle – attached to bar, protrudes below */}
-        <div className="navbar-desktop-services-wrapper">
-          <NavLink
-            href="#services"
-            className="navbar-services-pill"
-            label={<span className="navbar-services-label">Services</span>}
-          />
+        <div className="mx-auto hidden max-w-6xl md:block md:px-8 md:pr-16">
+          <div className="navbar-desktop-services-wrapper">
+            <NavLink
+              href="#services"
+              className="navbar-services-pill"
+              label={<span className="navbar-services-label">Services</span>}
+            />
+          </div>
         </div>
 
         {/* Mobile dropdown menu */}
@@ -121,7 +125,7 @@ export default function Navbar() {
             menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="border-t border-stone-300 bg-cream px-4 pt-3 pb-6">
+          <div className="border-t border-[var(--color-border-muted)] bg-cream px-4 pt-3 pb-6">
             <ul className="flex flex-col gap-1">
               {navLinks.map(({ label, href }) => (
                 <li key={href}>

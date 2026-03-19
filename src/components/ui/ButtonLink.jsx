@@ -1,9 +1,9 @@
 const baseClasses =
-  'rounded-lg px-6 py-3 font-medium transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950'
+  'inline-flex items-center justify-center rounded-lg px-6 py-3 font-medium transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-hero-text focus:ring-offset-2 focus:ring-offset-transparent'
 
 const variantClasses = {
-  filled: 'bg-cream text-ink',
-  outline: 'border-2 border-cream text-cream',
+  filled: 'bg-[var(--color-cta-pill-bg)] text-[var(--color-cta-pill-text)]',
+  outline: 'border-2 border-[var(--color-hero-text)] text-[var(--color-hero-text)]',
 }
 
 export default function ButtonLink({

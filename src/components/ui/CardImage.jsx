@@ -21,7 +21,7 @@ export default function CardImage({ imageSrc, imageAlt, className = '' }) {
 
   return (
     <div
-      className={`${baseClasses} bg-gradient-to-br from-stone-400 to-ink`}
+      className={`${baseClasses} bg-gradient-to-br from-stone-500 to-charcoal dark:from-stone-700 dark:to-stone-900`}
       role="img"
       aria-label={imageAlt}
     />

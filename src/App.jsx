@@ -17,7 +17,7 @@ function ContentSection({ id, title, backgroundClass }) {
     >
       <div className="mx-auto max-w-6xl">
         <h2 className={HEADING_PRIMARY_CLASS}>{title}</h2>
-        <p className="mt-4 text-slate-700">Placeholder section.</p>
+        <p className="mt-4 text-muted">Placeholder section.</p>
       </div>
     </section>
   )

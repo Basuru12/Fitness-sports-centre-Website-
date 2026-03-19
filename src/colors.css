@@ -1,6 +1,46 @@
 :root {
+  /* Brand */
+  --color-gold: #d9a619;
+
+  /* Surfaces & text (light) */
   --color-cream: #f2f2f0;
-  --color-gold: #D9A619;
   --color-charcoal: #303030;
   --color-ink: #000000;
+
+  /* Always for content on dark overlays (hero gradient) */
+  --color-hero-text: #f2f2f0;
+  --color-cta-pill-bg: #f2f2f0;
+  --color-cta-pill-text: #1a1a1a;
+
+  /* UI chrome */
+  --color-nav-hover: rgba(0, 0, 0, 0.08);
+  --color-border-muted: rgba(48, 48, 48, 0.25);
+  --color-surface-input: #ffffff;
+  --color-text-muted: #475569;
+
+  /* Status (contact form) */
+  --color-success-bg: #f0fdf4;
+  --color-success-border: rgba(21, 128, 61, 0.3);
+  --color-success-text: #14532d;
+
+  color-scheme: light;
+}
+
+.dark {
+  --color-gold: #e4b82e;
+
+  --color-cream: #1a1a18;
+  --color-charcoal: #b8b6b0;
+  --color-ink: #f2f2f0;
+
+  --color-nav-hover: rgba(255, 255, 255, 0.08);
+  --color-border-muted: rgba(255, 255, 255, 0.18);
+  --color-surface-input: #2a2a28;
+  --color-text-muted: #a8a29e;
+
+  --color-success-bg: rgba(20, 83, 45, 0.35);
+  --color-success-border: rgba(74, 222, 128, 0.35);
+  --color-success-text: #bbf7d0;
+
+  color-scheme: dark;
 }
