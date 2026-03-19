@@ -63,7 +63,12 @@ export default function Navbar() {
           <ThemeToggle className="absolute right-[5.5rem] top-2 z-20 md:right-6 md:top-3" />
           <div className="hidden w-full grid-cols-5 items-center justify-items-center gap-x-12 md:grid">
             {desktopLeftLinks.map(({ href, label }) => (
-              <NavLink key={href} href={href} label={label} className="navbar-link" />
+              <NavLink
+                key={href}
+                href={href}
+                label={label}
+                className="navbar-link navbar-desktop-link"
+              />
             ))}
 
             <div className="flex flex-col items-center justify-center">
@@ -74,7 +79,12 @@ export default function Navbar() {
             </div>
 
             {desktopRightLinks.map(({ href, label }) => (
-              <NavLink key={href} href={href} label={label} className="navbar-link" />
+              <NavLink
+                key={href}
+                href={href}
+                label={label}
+                className="navbar-link navbar-desktop-link"
+              />
             ))}
           </div>
 

@@ -1,8 +1,27 @@
 /* Reusable navbar-only styles (Tailwind @apply) */
 
 .navbar-link {
-  @apply whitespace-nowrap font-serif text-2xl transition-opacity hover:opacity-80;
+  @apply whitespace-nowrap font-serif text-2xl;
   color: var(--color-ink);
+}
+
+/* Hover underline (transparent → ink); shared by desktop links, Services label, mobile items */
+.navbar-desktop-link,
+.navbar-dropdown-link,
+.navbar-services-label {
+  text-decoration: underline transparent;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.navbar-desktop-link {
+  @apply inline-flex items-center justify-center;
+}
+
+.navbar-desktop-link:hover,
+.navbar-dropdown-link:hover {
+  text-decoration-color: currentColor;
 }
 
 .navbar-inner-bar {
@@ -16,6 +35,10 @@
 .navbar-services-label {
   @apply whitespace-nowrap font-serif text-2xl;
   color: var(--color-ink);
+}
+
+.navbar-services-pill:hover .navbar-services-label {
+  text-decoration-color: currentColor;
 }
 
 .navbar-services-pill {
@@ -59,6 +82,6 @@
 }
 
 .navbar-dropdown-link {
-  @apply block rounded px-3 py-2;
+  @apply block rounded-lg px-3 py-2;
 }
 
