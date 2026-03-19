@@ -1,8 +1,5 @@
 export default function CardImage({ imageSrc, imageAlt, className = '' }) {
-  const baseClasses = [
-    'aspect-[16/9] w-full overflow-hidden rounded-2xl',
-    className,
-  ]
+  const baseClasses = ['aspect-[16/9] w-full overflow-hidden rounded-2xl', className]
     .filter(Boolean)
     .join(' ')
 

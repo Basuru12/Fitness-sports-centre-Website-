@@ -1,9 +1,10 @@
 import { HEADING_PRIMARY_LEFT_CLASS } from '../../constants/headingClasses'
+import { INFO_CARD_ARTICLE_CLASS } from '../../constants/infoCardStyles'
 import CardImage from './CardImage'
 
 export default function LongInfoCard({ title, description, imageAlt, imageSrc }) {
   return (
-    <article className="flex flex-col">
+    <article className={INFO_CARD_ARTICLE_CLASS}>
       <h2 className={HEADING_PRIMARY_LEFT_CLASS}>{title}</h2>
 
       <div className="mt-6">
