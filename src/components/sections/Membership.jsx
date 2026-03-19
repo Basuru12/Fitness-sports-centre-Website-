@@ -49,7 +49,7 @@ export default function Membership() {
       <div className="mx-auto max-w-6xl">
         <h2 className={HEADING_PRIMARY_CLASS}>Choose a package</h2>
 
-        <div className="mt-14 grid grid-cols-1 items-stretch justify-items-center gap-14 md:grid-cols-3 md:gap-16">
+        <div className="mt-24 grid grid-cols-1 items-stretch justify-items-center gap-14 md:grid-cols-3 md:gap-16">
           {PLANS.map((plan) => (
             <div key={plan.id} className="flex h-full w-full justify-center md:max-w-none">
               <PricingCard

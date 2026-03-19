@@ -6,6 +6,9 @@ const EMAIL = 'fitnesssportscenter@gmail.com'
 const PHONE = '+94 772 696 884'
 const ADDRESS = '401/4 Degawatta , Dompe'
 
+/** Layout + hover dim for each contact line (not links). */
+const CONTACT_ROW_CLASS = 'flex items-center gap-3 text-ink hover:opacity-80'
+
 export default function Contact() {
   /** @param {{ name: string; surname: string; email: string; message: string }} _data */
   async function handleSubmit(_data) {
@@ -25,21 +28,15 @@ export default function Contact() {
               Send us a message , we will get back to you
             </h2>
             <div className="mt-6 flex flex-col gap-4">
-              <a
-                href={`mailto:${EMAIL}`}
-                className="flex items-center gap-3 text-ink hover:opacity-80"
-              >
+              <div className={CONTACT_ROW_CLASS}>
                 <EnvelopeIcon className="text-ink" />
                 <span>{EMAIL}</span>
-              </a>
-              <a
-                href={`tel:${PHONE.replace(/\s/g, '')}`}
-                className="flex items-center gap-3 text-ink hover:opacity-80"
-              >
+              </div>
+              <div className={CONTACT_ROW_CLASS}>
                 <PhoneIcon className="text-ink" />
                 <span>{PHONE}</span>
-              </a>
-              <div className="flex items-center gap-3 text-ink">
+              </div>
+              <div className={CONTACT_ROW_CLASS}>
                 <HomeIcon className="text-ink" />
                 <span>{ADDRESS}</span>
               </div>

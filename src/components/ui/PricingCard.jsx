@@ -1,6 +1,10 @@
+import { PRICING_CARD_INTERACTION_CLASS } from '../../constants/pricingCardStyles'
+
 export default function PricingCard({ title, priceLabel, perks = [] }) {
   return (
-    <article className="flex h-full max-w-xs flex-col overflow-hidden rounded-2xl border-4 border-charcoal bg-gold shadow-sm w-full">
+    <article
+      className={`flex h-full max-w-xs flex-col overflow-hidden rounded-2xl border-4 border-charcoal bg-gold shadow-sm w-full ${PRICING_CARD_INTERACTION_CLASS}`}
+    >
       <div className="px-6 pt-10 pb-8 text-center">
         <h3 className="text-5xl font-medium leading-snug text-ink">{title}</h3>
       </div>

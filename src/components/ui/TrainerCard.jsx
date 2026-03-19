@@ -1,8 +1,9 @@
 import CardImage from './CardImage'
+import { INFO_CARD_INTERACTION_CLASS } from '../../constants/infoCardStyles'
 
 export default function TrainerCard({ name, imageSrc, imageAlt, bio }) {
   return (
-    <article className="flex flex-col">
+    <article className={`flex flex-col rounded-2xl ${INFO_CARD_INTERACTION_CLASS}`}>
       <CardImage
         imageSrc={imageSrc}
         imageAlt={imageAlt}
