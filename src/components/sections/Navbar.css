@@ -17,7 +17,7 @@
 }
 
 .navbar-desktop-services-wrapper {
-  @apply -mt-4 hidden justify-center md:flex;
+  @apply relative z-10 -mt-4 hidden justify-center md:flex;
 }
 
 .navbar-menu-btn {
