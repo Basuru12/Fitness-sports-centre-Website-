@@ -1,13 +1,12 @@
 import About from './components/sections/About'
+import Contact from './components/sections/Contact'
 import Hero from './components/sections/Hero'
 import Membership from './components/sections/Membership'
 import Navbar from './components/sections/Navbar'
 import Services from './components/sections/Services'
 import Trainers from './components/sections/Trainers'
 
-const sections = [
-  { id: 'contact', title: 'Contact us', backgroundClass: 'bg-cream' },
-]
+const sections = []
 
 function ContentSection({ id, title, backgroundClass }) {
   return (
@@ -33,6 +32,7 @@ function App() {
         <Services />
         <Membership />
         <Trainers />
+        <Contact />
         {sections.map((section) => (
           <ContentSection key={section.id} {...section} />
         ))}
