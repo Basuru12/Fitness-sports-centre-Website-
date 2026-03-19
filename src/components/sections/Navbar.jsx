@@ -59,7 +59,7 @@ export default function Navbar() {
       {/* Only the inner cream bar is fixed; outer wrapper is in flow (no full-width strip) */}
       <div className="fixed left-0 right-0 top-4 z-50 overflow-visible md:top-6">
         {/* Inner nav bar: rounded cream box with labels and logo */}
-        <div className="navbar-inner-bar relative mx-auto max-w-6xl overflow-visible rounded-2xl px-4 py-2 pr-28 shadow-md text-ink md:px-8 md:pr-16 md:pb-4">
+        <div className="navbar-inner-bar relative mx-auto max-w-6xl overflow-visible rounded-2xl px-4 py-2 shadow-md text-ink md:px-8 md:pb-4 md:pr-16">
           <ThemeToggle className="absolute right-[5.5rem] top-2 z-20 md:right-6 md:top-3" />
           <div className="hidden w-full grid-cols-5 items-center justify-items-center gap-x-12 md:grid">
             {desktopLeftLinks.map(({ href, label }) => (
@@ -88,8 +88,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Mobile center: logo only (links live in hamburger menu) */}
-          <div className="flex flex-1 flex-col items-center justify-center pr-28 md:hidden">
+          {/* Mobile: logo centered in bar; theme + menu are absolutely positioned */}
+          <div className="flex w-full justify-center md:hidden">
             <HomeLogoLink
               logoSizeClass="navbar-logo--mobile"
               onClick={scrollToTop}
