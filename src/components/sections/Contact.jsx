@@ -7,8 +7,9 @@ const PHONE = '+94 772 696 884'
 const ADDRESS = '401/4 Degawatta , Dompe'
 
 export default function Contact() {
-  function handleSubmit(e) {
-    e.preventDefault()
+  /** @param {{ name: string; surname: string; email: string; message: string }} _data */
+  async function handleSubmit(_data) {
+    // Placeholder for future API / email integration
   }
 
   return (
